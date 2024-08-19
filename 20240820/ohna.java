@@ -1,0 +1,28 @@
+class Solution {
+    public int reverse(int x) {
+        String s = Integer.toString(x);
+        int len = s.length();
+        StringBuilder sb = new StringBuilder();
+        int result;
+        try{
+            if(x > 0){
+                for(int i =len-1; i >=0; i--){
+                    sb.append(s.charAt(i));
+                }
+            }else{
+                sb.append(s.charAt(0));
+                for(int i =len-1; i >=1; i--){
+                    sb.append(s.charAt(i));
+                }
+            }
+            result =  Integer.parseInt(sb.toString());
+        }catch(NumberFormatException e){
+            result = 0;
+        }
+        return result;
+
+        
+
+
+    }
+}
