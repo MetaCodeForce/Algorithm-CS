@@ -1,5 +1,5 @@
-Class Solution{
-	pubcli Boolean solution(String s, String p){
+class Solution{
+	pubcli Boolean isMatch(String s, String p){
 		// Pattern 객체 생성
 		Pattern pattern = Pattern.compile(p);
 		
