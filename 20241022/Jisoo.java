@@ -16,7 +16,7 @@ class Solution {
         while (list1 != null) {
 
             while (list2 != null && list1.val >= list2.val) {
-                merge.next = new ListNode(list2.val, merge);
+                merge.next = new ListNode(list2.val);
                 merge = merge.next;
                 list2 = list2.next;
             }
