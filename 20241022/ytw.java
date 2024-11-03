@@ -1,4 +1,4 @@
-private ListNode mergeTwoLists(ListNode listi, ListNode list2) {
+public ListNode mergeTwoLists(ListNode listi, ListNode list2) {
 
     ListNode headNodel = list1;
     ListNode headNode2 = list2;
@@ -23,7 +23,7 @@ private ListNode mergeTwoLists(ListNode listi, ListNode list2) {
     }
     
     if(rootNode == null) return null;
-    
+
     while(true){
         if(parentNode == null){
             parentNode = rootNode;
